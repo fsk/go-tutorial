@@ -11,7 +11,7 @@ permissions:
   id-token: write
 
 env:
-  INSTANCE: 'Writerside/go-tutorial'
+  INSTANCE: 'Writerside/g'
   DOCKER_VERSION: '243.21565'
 
 jobs:

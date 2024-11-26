@@ -4,7 +4,7 @@
 
 <instance-profile id="g"
                  name="Go Tutorial"
-                 start-page="starter-topic.md">
+                 start-page="go-tutorial.md">
 
-    <toc-element topic="starter-topic.md"/>
+    <toc-element topic="go-tutorial.md"/>
 </instance-profile>

@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
 
 permissions:
-  id-token: write
-  pages: write
   contents: read
+  pages: write
+  id-token: write
 
 env:
   INSTANCE: 'Writerside/g'
@@ -32,14 +32,14 @@ jobs:
         with:
           name: docs
           path: artifacts/
-          retention-days: 7
+          retention-days: 1
 
   deploy:
+    needs: build
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v4

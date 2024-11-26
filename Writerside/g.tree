@@ -7,8 +7,7 @@
                  start-page="go-tutorial.md">
 
     <toc-element topic="go-tutorial.md">
-        <toc-element topic="Sayısal-Veri-Tipleri.md">
-        </toc-element>
+        <toc-element topic="Sayısal-Veri-Tipleri.md"/>
         <toc-element topic="Veri-Tipleri.md"/>
     </toc-element>
 </instance-profile>
